@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function App() {
 
@@ -25,12 +26,16 @@ export default function App() {
             Bio
           </button>
 
-          <button onClick={()=>scrollToSection("video")}>
-            Video
+          <button onClick={()=>scrollToSection("about")}>
+            About Me
           </button>
 
           <button onClick={()=>scrollToSection("photos")}>
             Photos
+          </button>
+
+          <button onClick={()=>scrollToSection("transcript")}>
+            Transcript
           </button>
 
           <button onClick={()=>scrollToSection("contact")}>
@@ -63,7 +68,10 @@ export default function App() {
 
         <div className="hero-right">
 
-          <img src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40"/>
+          <img
+            src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40"
+            loading="lazy"
+          />
 
         </div>
 
@@ -73,35 +81,38 @@ export default function App() {
       {/* SOCIAL BAR */}
       <div className="social-bar">
 
-        <a href="#">f</a>
-        <a href="#">t</a>
-        <a href="#">ig</a>
-        <a href="#">yt</a>
+        <a href="https://facebook.com" target="_blank">
+          <FaFacebookF/>
+        </a>
+
+        <a href="https://twitter.com" target="_blank">
+          <FaTwitter/>
+        </a>
+
+        <a href="https://instagram.com" target="_blank">
+          <FaInstagram/>
+        </a>
+
+        <a href="https://youtube.com" target="_blank">
+          <FaYoutube/>
+        </a>
 
       </div>
 
 
+      {/* ABOUT SECTION */}
 
-      {/* VIDEO SECTION */}
+      <section id="about" className="about">
 
-      <section id="video" className="video">
+        <h2>About Me</h2>
 
-        <h2>Video</h2>
-
-        <div className="video-box">
-
-          <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="video"
-            allowFullScreen
-          />
-
-        </div>
+        <p>
+          I am an actor, performer and model passionate about storytelling
+          and creative expression. My experience spans theater, film,
+          television and commercial projects.
+        </p>
 
       </section>
-
 
 
       {/* PHOTOS SECTION */}
@@ -124,6 +135,20 @@ export default function App() {
 
       </section>
 
+
+      {/* TRANSCRIPT */}
+
+      <section id="transcript" className="transcript">
+
+        <h2>Transcript</h2>
+
+        <ul>
+          <li>2023 — Bachelor of Computer Science</li>
+          <li>2020 — High School Diploma</li>
+          <li>2018 — Acting Workshop</li>
+        </ul>
+
+      </section>
 
 
       {/* CONTACT */}
@@ -175,53 +200,6 @@ export default function App() {
               <p>Eye Color: Brown</p>
               <p>Hair Color: Brown</p>
               <p>Languages: English, German</p>
-
-            </div>
-
-            <hr/>
-
-            <div className="resume-grid">
-
-              <div>
-                <h3>Special Skills</h3>
-                <p>Physical Comedy</p>
-                <p>Singing</p>
-                <p>Swimming</p>
-                <p>Football</p>
-              </div>
-
-              <div>
-                <h3>Theater</h3>
-                <p>2035 / Play / Director / Role</p>
-                <p>2035 / Play / Director / Role</p>
-              </div>
-
-              <div>
-                <h3>Film</h3>
-                <p>2035 / Title / Director / Role</p>
-                <p>2035 / Title / Director / Role</p>
-                <p>2035 / Title / Director / Role</p>
-              </div>
-
-              <div>
-                <h3>Education & Training</h3>
-                <p>Institution / Workshop</p>
-                <p>Institution / Workshop</p>
-                <p>Institution / Workshop</p>
-              </div>
-
-              <div>
-                <h3>TV</h3>
-                <p>2035 / Production House / Role</p>
-                <p>2035 / Production House / Role</p>
-              </div>
-
-              <div>
-                <h3>Awards</h3>
-                <p>2035 / Description</p>
-                <p>2035 / Description</p>
-                <p>2035 / Description</p>
-              </div>
 
             </div>
 

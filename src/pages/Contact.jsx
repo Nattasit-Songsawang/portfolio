@@ -16,10 +16,13 @@ export default function Contact() {
 
         <h2>Contact</h2>
 
-        <h4>Manager</h4>
-        <p>Bruce Robertson</p>
-        <p>Email : info@mysite.com</p>
-        <p>Tel : 123-456-7890</p>
+        <h2>Manager</h2>
+        <p>Nattasit Songsawang</p>
+        <p>Email : piiick777@gmail.com</p>
+        <p>Tel : 0955962720</p>
+        <p>Ig : po_pick</p>
+        <p>Facebook : ณัฐสิทธิ์ ทรงสว่าง</p>
+        <p>Line: pick511</p>
 
       </div>
 
