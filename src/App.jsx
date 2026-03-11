@@ -3,21 +3,22 @@ import "./App.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-export default function App() {
+function Layout() {
 
   const [showResume,setShowResume] = useState(false);
 
   return (
-    <BrowserRouter>
 
     <div className="app">
 
       {/* NAVBAR */}
       <nav className="navbar">
 
-        <div className="logo">Daniel Martinez</div>
-
         <div className="menu">
+
+          <Link to="/">
+            <button>Home</button>
+          </Link>
 
           <button onClick={()=>setShowResume(true)}>
             Bio
@@ -48,7 +49,6 @@ export default function App() {
 
       {/* HOME PAGE */}
       <Route path="/" element={
-
       <>
       <section className="hero">
 
@@ -63,7 +63,7 @@ export default function App() {
           </h1>
 
           <p className="role">
-            Actor / Performer / Model
+            Aduino / Network / Model AI
           </p>
 
         </div>
@@ -150,22 +150,50 @@ export default function App() {
       } />
 
 
-      {/* TRANSCRIPT */}
-      <Route path="/transcript" element={
+     {/* TRANSCRIPT */}
+<Route path="/transcript" element={
 
-      <section className="transcript">
+<section className="transcript-page">
 
-        <h2>Transcript</h2>
+  <div className="transcript-container">
 
-        <ul>
-          <li>2023 — Bachelor of Computer Science</li>
-          <li>2020 — High School Diploma</li>
-          <li>2018 — Acting Workshop</li>
-        </ul>
+    <div className="transcript-stats">
 
-      </section>
+      <div className="stat-card">
+        <p className="stat-label">CURRENT GPAX</p>
+        <h2>2.20</h2>
+      </div>
 
-      } />
+      <div className="stat-card">
+        <p className="stat-label">TOTAL CREDITS</p>
+        <h2>63</h2>
+      </div>
+
+    </div>
+
+    <a
+      href="/transcript.pdf"
+      download
+      className="download-btn"
+    >
+      ⬇ DOWNLOAD TRANSCRIPT
+    </a>
+
+    <div className="semester">
+
+      <h1>1ST SEMESTER 2024</h1>
+
+      <div className="gpa-pill">
+        GPAX : 2.20
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+} />
 
 
       {/* CONTACT */}
@@ -237,11 +265,11 @@ export default function App() {
 
             <div className="resume-info">
 
-              <p>Born: 1985</p>
-              <p>Height: 5'11</p>
-              <p>Eye Color: Brown</p>
-              <p>Hair Color: Brown</p>
+              <h4>My nickname is pick</h4>
+              <p>branch : ElECTRONICS COMPUTER</p>
+              <p>Date of Birth : 7  November 2003.</p>
               <p>Languages: English, German</p>
+              <p>study at : King Mongkut's University of Technology North Bangkok.</p>
 
             </div>
 
@@ -251,16 +279,18 @@ export default function App() {
 
               <div>
                 <h3>Special Skills</h3>
-                <p>Physical Comedy</p>
-                <p>Singing</p>
-                <p>Swimming</p>
-                <p>Football</p>
+                <p>write a program Arduino</p>
+                <p>Web Design</p>
+                <p>Mobile App</p>
+                <p>Ai and Python</p>
+                 <p>MySQL</p>
+                <p>Network and Cybersecuoity</p>
               </div>
 
               <div>
-                <h3>Theater</h3>
-                <p>2035 / Play / Director / Role</p>
-                <p>2035 / Play / Director / Role</p>
+                <h3>Faculty and major</h3>
+                <p>Faculty College of Industrial Technology</p>
+                <p>electronic engineering technology</p>
               </div>
 
               <div>
@@ -299,7 +329,13 @@ export default function App() {
       )}
 
     </div>
+  );
+}
 
+export default function App(){
+  return(
+    <BrowserRouter>
+      <Layout/>
     </BrowserRouter>
   );
 }
