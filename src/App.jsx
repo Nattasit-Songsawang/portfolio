@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLine, FaGoogle } from "react-icons/fa";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import profile from "./assets/profile.jpg";
 
 function Layout() {
 
@@ -70,10 +71,7 @@ function Layout() {
 
         <div className="hero-right">
 
-          <img
-            src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40"
-            loading="lazy"
-          />
+          <img src={profile} alt="profile"loading="lazy"/>
 
         </div>
 
@@ -94,30 +92,21 @@ function Layout() {
         </h1>
 
         <p className="about-text">
-        I'm a paragraph. Click here to add your own text and edit me. 
-        It’s easy. Just click “Edit Text” or double click me to add 
-        your own content and make changes to the font. Feel free to 
-        drag and drop me anywhere you like on your page. I’m a great 
-        place for you to tell a story and let your users know a little 
-        more about you.
+        I am interested in computer technology and embedded systems. I have experience working with Arduino to create small electronic projects and learn about programming and hardware. I enjoy learning new technologies and improving my skills in IT and electronics.
         </p>
 
         <p className="about-text">
-        This is a great space to write a long text about your company 
-        and your services. You can use this space to go into a little 
-        more detail about your company. Talk about your team and what 
-        services you provide. Tell your visitors the story of how you 
-        came up with the idea for your business and what makes you 
-        different from your competitors. Make your company stand out 
-        and show your visitors who you are.
+        I am interested in IT support and computer technology. I have basic skills in troubleshooting computer problems, installing software, and maintaining computer systems. I enjoy helping others solve technical issues and learning new IT skills
         </p>
 
-        <button
-        className="about-btn"
-        onClick={()=>setShowResume(true)}
-        >
-        View Full Resume
-        </button>
+   <a 
+     href="/Resume_nattasit.pdf"
+     target="_blank"
+    rel="noopener noreferrer"
+className="about-btn"
+    >
+    View Full Resume
+</a>
 
         </div>
 
@@ -166,7 +155,7 @@ function Layout() {
 
       <div className="stat-card">
         <p className="stat-label">TOTAL CREDITS</p>
-        <h2>63</h2>
+        <h2>52</h2>
       </div>
 
     </div>
@@ -181,7 +170,7 @@ function Layout() {
 
     <div className="semester">
 
-      <h1>1ST SEMESTER 2024</h1>
+      <h1>Cumulative grade for 3 semesters</h1>
 
       <div className="gpa-pill">
         GPAX : 2.20
@@ -212,9 +201,30 @@ function Layout() {
           <h2>Contact</h2>
 
           <h4>Manager</h4>
-          <p>Bruce Robertson</p>
-          <p>Email : info@mysite.com</p>
-          <p>Tel : 123-456-7890</p>
+          <p>Nattasit Songsawang</p>
+        <p>Email : piiick777@gmail.com</p>
+        <p>Tel : 0955962720</p>
+        <p>Ig : po_pick</p>
+        <p>Facebook : ณัฐสิทธิ์ ทรงสว่าง</p>
+        <p>Line: pick511</p>
+        
+<div className="map-box">
+
+<iframe
+src="https://www.google.com/maps?q=Nonthaburi&output=embed"
+loading="lazy"
+></iframe>
+
+<a
+href="https://maps.app.goo.gl/odUCjYGU4cETsCMA6"
+target="_blank"
+className="map-btn"
+>
+
+Open Google Maps
+</a>
+
+</div>
 
         </div>
 
@@ -228,21 +238,20 @@ function Layout() {
       {/* SOCIAL BAR */}
       <div className="social-bar">
 
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://www.facebook.com/nath.siththi.thrng.swang" target="_blank">
           <FaFacebookF/>
         </a>
 
-        <a href="https://twitter.com" target="_blank">
-          <FaTwitter/>
+        <a href="https://line.me/ti/p/Q1G-Mst6vU" target="_blank">
+          <FaLine/>
         </a>
 
-        <a href="https://instagram.com" target="_blank">
+        <a href="https://www.instagram.com/_po.pick_/" target="_blank">
           <FaInstagram/>
         </a>
 
-        <a href="https://youtube.com" target="_blank">
-          <FaYoutube/>
-        </a>
+      
+        
 
       </div>
 
@@ -281,9 +290,9 @@ function Layout() {
                 <h3>Special Skills</h3>
                 <p>write a program Arduino</p>
                 <p>Web Design</p>
-                <p>Mobile App</p>
+                <p>Mobile App and MySQL</p>
                 <p>Ai and Python</p>
-                 <p>MySQL</p>
+                 <p>Git/Github and vercel</p>
                 <p>Network and Cybersecuoity</p>
               </div>
 
@@ -294,30 +303,35 @@ function Layout() {
               </div>
 
               <div>
-                <h3>Film</h3>
-                <p>2035 / Title / Director / Role</p>
-                <p>2035 / Title / Director / Role</p>
-                <p>2035 / Title / Director / Role</p>
+                <h3>Work EXPERIENCE</h3>
+                <p>I have experience working with microcontrollers to measure current and calculate electricity costs.</p>
+                <p>I once worked on a project about training an AI model to detect people.</p>
+                <p>I have experience working with LAN systems.</p>
+                <p>I have experience working with mobile apps and MySQL databases.</p>
+                <p>I have experience working with computer networks and basic system maintenance</p>
               </div>
 
               <div>
-                <h3>Education & Training</h3>
-                <p>Institution / Workshop</p>
-                <p>Institution / Workshop</p>
-                <p>Institution / Workshop</p>
+                <h3>Education </h3>
+                <p>- Bachelor’s Degree  in eletronics computer technology, 2026 college of industrial technology,king mongkut’s university of technology north bangkok.</p>
+                <p>- Diproma in electronics ,2024, GPA 3.75, Suphanburi tecnical college.     </p>
+                <p>- certificate in vocational education in computer programmer,2021, gpa 3.5
+suphanburi vocational college.</p>
               </div>
 
               <div>
-                <h3>TV</h3>
-                <p>2035 / Production House / Role</p>
-                <p>2035 / Production House / Role</p>
+                <h3>What I'm interested in</h3>
+                <p>I am interested in IT and always try to improve my technical knowledge</p>
+                <p>I enjoy inventing things related to electronics and Arduino</p>
+                <p>I enjoy learning new technologies and improving my IT skills</p>
               </div>
 
               <div>
-                <h3>Awards</h3>
-                <p>2035 / Description</p>
-                <p>2035 / Description</p>
-                <p>2035 / Description</p>
+                <h3>Position sought</h3>
+                <p>IT Support</p>
+                <p>IoT Developer</p>
+                <p>IT Assistant</p>
+                <p>Arduino and IoT Developer</p>
               </div>
 
             </div>

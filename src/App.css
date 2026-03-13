@@ -78,8 +78,14 @@ letter-spacing:3px;
 font-size:14px;
 }
 
+.hero{
+display:flex;
+height:100vh;
+}
+
 .hero-right{
 flex:1;
+overflow:hidden;
 }
 
 .hero-right img{
@@ -258,16 +264,33 @@ object-fit:cover;
 .contact-right{
 flex:1;
 background:#0e5c5c;
-padding:100px;
 display:flex;
 flex-direction:column;
 justify-content:center;
+align-items:center;
+padding:120px;
+text-align:center;
 }
 
 .contact-right h2{
 color:#ffd84d;
-font-size:60px;
-margin-bottom:40px;
+font-size:80px;
+margin-bottom:50px;
+letter-spacing:2px;
+font-weight:700;
+}
+
+.contact-right h4{
+font-size:22px;
+margin-bottom:15px;
+color:#ffd84d;
+}
+
+.contact-right p{
+font-size:18px;
+margin-bottom:8px;
+line-height:1.6;
+color:#e5e5e5;
 }
 
 /* ====================== */
@@ -383,8 +406,8 @@ color:white;
 .download-btn{
 display:block;
 text-align:center;
-background:#2d6cff;
-color:white;
+background:#aeb8cf;
+color:#df0e0e;
 padding:16px;
 border-radius:12px;
 font-weight:600;
@@ -410,4 +433,35 @@ padding:10px 20px;
 border-radius:30px;
 color:#2d6cff;
 font-weight:700;
+
+
+.map-box{
+margin-top:35px;
+width:380px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.35);
+}
+
+.map-box iframe{
+width:100%;
+height:220px;
+border:none;
+}
+
+.map-btn{
+display:block;
+text-align:center;
+padding:14px;
+background:#ffd84d;
+color:black;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.map-btn:hover{
+background:#f2c400;
+}
 }
