@@ -4,6 +4,14 @@ import "./App.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLine, FaGoogle } from "react-icons/fa";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import profile from "./assets/profile.jpg";
+import photo1 from "./assets/photo1.jpg";
+import photo2 from "./assets/photo2.jpg";
+import photo3 from "./assets/photo3.jpg";
+import photo4 from "./assets/photo4.jpg";
+import photo5 from "./assets/photo5.jpg";
+import photo6 from "./assets/photo6.jpg";
+import contactImg from "./assets/contact.jpg";
+import { FaDownload } from "react-icons/fa";
 
 function Layout() {
 
@@ -205,17 +213,21 @@ Technical Mastery
 
 <h2>Photos</h2>
 
+
+
 <div className="photo-grid">
 
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"/>
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"/>
-<img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c"/>
+<img src={photo1} alt="photo"/>
+<img src={photo2} alt="photo"/>
+<img src={photo3} alt="photo"/>
 
-<img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"/>
-<img src="https://images.unsplash.com/photo-1521119989659-a83eee488004"/>
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1"/>
+<img src={photo4} alt="photo"/>
+<img src={photo5} alt="photo"/>
+<img src={photo6} alt="photo"/>
 
 </div>
+
+
 
 </section>
 
@@ -226,6 +238,14 @@ Technical Mastery
 <Route path="/transcript" element={
 
 <section className="transcript-page page">
+
+<h1 className="kmutnb-center">
+  <span className="k-orange">KM</span>
+  <span className="k-gray">UT</span>
+  <span className="k-green">NB</span>
+</h1>
+
+
 
 <div className="transcript-container">
 
@@ -248,7 +268,7 @@ href="/transcript.pdf"
 download
 className="download-btn"
 >
-⬇ DOWNLOAD TRANSCRIPT
+<FaDownload className="download-icon"/> Download Transcript
 </a>
 
 <div className="semester">
@@ -275,7 +295,7 @@ GPAX : 2.20
 
 <div className="contact-left">
 
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"/>
+<img src={contactImg} alt="contact"/>
 
 </div>
 
@@ -283,13 +303,23 @@ GPAX : 2.20
 
 <h2>Contact</h2>
 
-<h4>Manager</h4>
-<p>Nattasit Songsawang</p>
-<p>Email : piiick777@gmail.com</p>
-<p>Tel : 0955962720</p>
-<p>Ig : po_pick</p>
-<p>Facebook : ณัฐสิทธิ์ ทรงสว่าง</p>
-<p>Line: pick511</p>
+<div className="contact-card">
+
+<h4 className="contact-role">Manager</h4>
+
+<p><span>👤</span> Nattasit Songsawang</p>
+
+<p><span>📧</span> piiick777@gmail.com</p>
+
+<p><span>📞</span> 0955962720</p>
+
+<p><span>📷</span> po_pick</p>
+
+<p><span>📘</span> ณัฐสิทธิ์ ทรงสว่าง</p>
+
+<p><span>💬</span> pick511</p>
+
+</div>
 
 <div className="map-box">
 
