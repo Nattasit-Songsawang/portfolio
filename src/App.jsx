@@ -94,7 +94,7 @@ Bio
 <h3>Hey, I'm</h3>
 
 <h1 className="name">
-Nattasit
+NATTASIT
 <br/>
 SONGSAWANG
 </h1>
@@ -387,7 +387,7 @@ onClick={()=>setShowResume(false)}
 <h4>My nickname is pick</h4>
 <p>branch : ElECTRONICS COMPUTER</p>
 <p>Date of Birth : 7  November 2003.</p>
-<p>Languages: English, German</p>
+<p>Address: Suphanburi</p>
 <p>study at : King Mongkut's University of Technology North Bangkok.</p>
 
 </div>
