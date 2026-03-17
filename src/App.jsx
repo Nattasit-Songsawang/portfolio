@@ -386,7 +386,7 @@ onClick={()=>setShowResume(false)}
 
 <h4>My nickname is pick</h4>
 <p>branch : ElECTRONICS COMPUTER</p>
-<p>Date of Birth : 7  November 2003.</p>
+<p>age: 22 year old.</p>
 <p>Address: Suphanburi</p>
 <p>study at : King Mongkut's University of Technology North Bangkok.</p>
 
